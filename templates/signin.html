@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<body style="text-align:center">
+	<form method="post">
+		<h1>SignUp</h1>
+		<lable style ="float:left; color:#3F51B5 ;font-family: sans-serif; box-shadow: 0px 5px 20px #888888; padding: 10px 10px 10px 10px;"> Username <input type="text" placeholder="Username" name="username" vlaue="{{username}}">
+			<span style="color:red"></span>
+		</lable>
+		<br><br><br>
+		<lable style= "float:left; color:#3F51B5 ;font-family: sans-serif; box-shadow: 0px 5px 20px #888888; padding: 10px 10px 10px 10px;"> Password <input type="password" placeholder="Password" name="password">
+			<span style="color:red"></span>
+		</lable>
+		<br><br><br>
+		<input style="float:left; color:#3F51B5 ;font-family: sans-serif; padding: 10px 10px 10px 10px;" type="submit">
+	</form>
+	</body>
+{% endblock %}

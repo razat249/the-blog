@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="card">
+
+		<h4 style="float:right">{{p.created}}</h4>
+		<h2>{{p.title}}</h2></span>
+		<div><p>{{p.art}}</p></div>
+		<br><br>
+		<p>Updated {{t}} seconds ago</p>
+	</div>	
+
+{% endblock %}

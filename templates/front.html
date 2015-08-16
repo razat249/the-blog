@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for art in arts %}
+	<div class="card">
+
+		<h4 style="float:right">{{art.created}}</h4>
+		<h2><a href="/blog/{{art.key().id()}}">{{art.title}}</a></h2></span>
+		<div><p>{{art.art}}</p></div>
+		<br><br>
+	</div>
+{% endfor %}
+	<p>page Updated {{t}} seconds ago</p>
+{% endblock %}
